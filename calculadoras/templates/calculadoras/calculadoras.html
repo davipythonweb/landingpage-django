@@ -1,0 +1,29 @@
+{% extends "calculadoras/base.html" %}
+{% block title %}Calculadoras{% endblock %}
+
+{% block content %}
+<div class="card-container">
+    <div class="card">
+        <h2>Financeira</h2>
+        <form method="post">
+            {% csrf_token %}
+            {{ form_financeira.as_p }}
+            <button type="submit" name="calcular_financeira">Calcular</button>
+        </form>
+        {% if resultado_financeira %}
+            <pre>{{ resultado_financeira }}</pre>
+        {% endif %}
+    </div>
+    <div class="card">
+        <h2>Trabalhista</h2>
+        <form method="post">
+            {% csrf_token %}
+            {{ form_trabalhista.as_p }}
+            <button type="submit" name="calcular_trabalhista">Calcular</button>
+        </form>
+        {% if resultado_trabalhista %}
+            <pre>{{ resultado_trabalhista }}</pre>
+        {% endif %}
+    </div>
+</div>
+{% endblock %}
