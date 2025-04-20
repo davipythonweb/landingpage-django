@@ -1,0 +1,7 @@
+
+                Salário: 1500.0
+                Meses Trabalhados: 24
+                FGTS: 2880.00
+                Tipo de Demissão: justa
+                Total a receber: R$ 0.00
+                
