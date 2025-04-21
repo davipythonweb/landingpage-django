@@ -4,5 +4,5 @@ from django.http import HttpResponse
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('', lambda request: HttpResponse('<h1>Ola Mundo</h1>')),
+    path('', lambda request: HttpResponse('<h1 style="color: indigo;font-size: 50px;font-family: Arial, Helvetica, sans-serif;text-align: center;text-decoration: underline;text-transform: uppercase;">Ola Mundo</h1>')),
 ]
