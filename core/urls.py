@@ -6,5 +6,3 @@ urlpatterns = [
     path('admin/', admin.site.urls),
     path('', lambda request: HttpResponse('<h1>Ola Mundo</h1>')),
 ]
-
-
