@@ -1,5 +1,7 @@
+#criando uma lista de clientes
 clientes = ["Ana", "Alana", "Davi"]
 
+#criando um template de email
 email_template = """
 Ola, %(cliente)s 
 Tem interesse em comprar %(produto)s?
@@ -9,6 +11,7 @@ Apenas %(quantidade)d unidades disponiveis!
 Preco promocional $%(preco).2f
 """
 
+#criando um loop para enviar o email para cada cliente
 for cliente in clientes:
     print(
         email_template % {
@@ -20,4 +23,4 @@ for cliente in clientes:
             'preco': 40.5
         }
     )
-    
+
