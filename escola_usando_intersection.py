@@ -5,7 +5,7 @@ Imprimir a lista de criancas agrupadas por sala
 que frequentam cada atividade.
 
 """
-__version__ = "0.1.0"
+__version__ = "0.1.1"
 __author__ = "Davi Nascimento"
 
 # Dados da escola
